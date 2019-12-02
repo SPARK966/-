@@ -1,4 +1,5 @@
 import discord
+import os
 from discord import channel
 
 cilent = discord.Client()
@@ -24,5 +25,5 @@ async def on_message(message):
 
 
 
-
-cilent.run("NjUxMDU3Njc1ODc0MDc0NjI0.XeUW6w.L__BJ6GvrFpwc16M1YRECRNw2ac")
+access_token = os.environ["BOT TOKEN"]
+cilent.run(access_token)
